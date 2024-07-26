@@ -1,0 +1,16 @@
+<div id="<%= dom_id profile %>">
+
+ <div class="profile-container">
+  <div class="profile-header">
+    <%= image_tag profile.photo, class: "profile-photo" if profile.photo.attached? %>
+    <h1><%= profile.name %></h1>
+    <h2><%= profile.username %></h2>
+  </div>
+  <hr>
+  <div class="profile-details">
+    <p><strong>About me:</strong> <%= profile.description %></p>
+    <p><strong>Age:</strong> <%= profile.age%></p>
+  </div>
+</div>
+  
+</div>
