@@ -19,3 +19,28 @@ UserProfileApp é uma aplicação Ruby on Rails que permite aos usuários criar 
   - Ruby 3 ou superior
   - Rails 7 ou superior
   - SQLite
+    
+## Passos para Instalação
+ 1. Clone o repositório:
+    ```bash
+     git clone https://github.com/fernandodxx/Userprofile.git
+     cd UserProfileApp
+    ```
+2. Instale as dependências:
+   ```bash
+    bundle install
+   ```
+3. Configure o banco de dados:
+   ```bash
+    rails db:create
+    rails db:migrate
+4. Inicie o servidor:
+   ```bash
+    rails server
+   ```
+5. Acesse a aplicação em http://localhost:3000.
+
+## Uso
+ Após iniciar o servidor, você pode registrar uma nova conta, fazer login e começar a criar e editar perfis de usuário.
+
+ ![Captura de tela de 2024-07-25 21-56-56](https://github.com/user-attachments/assets/e088c874-aac6-41b0-8c6b-418083f8895b)
