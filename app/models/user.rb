@@ -1,6 +1,7 @@
 class User < ApplicationRecord
   has_secure_password
-  has_many :profiles
+  has_one :profile, dependent: :destroy
+  accepts_nested_attributes_for :profile
   has_many :email_verification_tokens, dependent: :destroy
   has_many :password_reset_tokens, dependent: :destroy
   has_many :sessions, dependent: :destroy
